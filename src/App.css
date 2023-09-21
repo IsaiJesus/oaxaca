@@ -1,0 +1,247 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+:root{
+  --color-theme-primary: #53AFFF;
+  --color-theme-secondary: #051D41;
+
+  --padding-primary: 12px;
+
+  --radius-primary: 6px;
+
+  --bg-primary: #EEE;
+  --bg-secondary: #FFF;
+  --fz-primary: 16px
+}
+
+.container-main{
+  background: var(--bg-primary)
+}
+
+/*HEADER*/
+
+.bg-map{
+  background-image: url(assets/map.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.box-header{
+  color: #FFF;
+  padding: var(--padding-primary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.box-header h1{
+  color: #FFF;
+  font-size: 35px;
+  text-shadow: -5px 4px 0 var(--color-theme-secondary);
+}
+
+.box-header form{
+  margin: 16px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-primary);
+  background: var(--bg-secondary)
+}
+
+.box-header form input{
+  padding: var(--padding-primary);
+  margin-right: 5px;
+  border-radius: var(--radius-primary);
+  outline: none;
+  border: none;
+  font-size: 14px;
+  background: var(--bg-secondary)
+}
+
+.box-header form button{
+  padding: var(--padding-primary);
+  border: 0;
+  color: var(--color-theme-secondary);
+  border-radius: var(--radius-primary);
+  font-size: 14px;
+  cursor: pointer;
+  background: var(--bg-secondary)
+}
+
+.box-header form button:hover{
+  color: var(--color-theme-primary);
+}
+
+/*NAV*/
+
+.active{
+  color: var(--color-theme-primary);
+}
+
+.box-navbar{
+  padding: var(--padding-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box-navbar a{
+  padding: 10px 12px;
+  margin: 0 6px;
+  display: flex;
+  align-items: center;
+  color: var(--color-theme-primary);
+  border-radius: var(--radius-primary);
+  background-color: var(--bg-primary);
+}
+
+.box-navbar a:hover{
+  color: var(--color-theme-secondary);
+}
+
+/*MAIN*/
+
+.box-main{
+  padding: var(--padding-primary);
+  display: flex;
+  flex-direction: column;
+}
+
+.box-location{
+  padding: var(--padding-primary);
+  margin-bottom: 12px;
+  display: flex;
+  background: var(--bg-secondary);
+  border-radius: var(--radius-primary);
+}
+
+.box-img-location{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box-img-location img{
+  width: 120px;
+  margin: 0 8px 0 0;
+  object-fit: cover;
+  border-radius: var(--radius-primary);
+}
+
+.box-info-location{
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+.semibox-info-location{
+  max-width: 100%;
+}
+
+.box-info-location h2{
+  margin-bottom: 4px;
+  font-size: 18px;
+  white-space: nowrap;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+}
+
+.location-rank{
+  margin-bottom: 2px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.location-rank p{
+  color: #70757A;
+  margin-right: 5px;
+}
+
+.location-rank svg{
+  color: #FBBC04;
+}
+
+.location-rank-stars{
+  display: flex;
+  align-items: center;
+}
+
+.box-info-location a{
+  margin-top: 6px;
+  padding: 6px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: flex-end;
+  justify-self: flex-end;
+  border-radius: var(--radius-primary);
+  text-decoration: none;
+  color: #FFF;
+  background: var(--color-theme-primary);
+}
+
+.box-info-location a svg{
+  margin-left: 5px;
+  font-size: 14px;
+}
+
+/*FOOTER*/
+
+footer{
+  padding: 22px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: var(--color-theme-secondary);
+  color: #FFF;
+}
+
+.box-adventurista{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  font-size: 14px;
+}
+
+.box-adventurista img{
+  width: 160px;
+}
+
+.box-adventurista p{
+  margin: 16px 0 20px 0;  
+}
+
+.box-quetzcode{
+  margin-top: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.box-quetzcode img{
+  height: 60px;
+  margin-top: 16px;
+}
+
+.box-quetzcode a{
+  font-size: 15px;
+  margin-top: 6px;
+  color: #adadad;
+}
+
+.box-quetzcode a:hover{
+  color: #FFF;
+}
