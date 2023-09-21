@@ -20,10 +20,6 @@ export default function Account() {
           latitude = position.coords.latitude;
           longitude = position.coords.longitude;
 
-          console.log("esdgds")
-          console.log(latitude)
-          console.log(longitude)
-
           const data = {
             lat: latitude,
             lng: longitude,
@@ -72,6 +68,8 @@ export default function Account() {
       console.error("El navegador no admite la geolocalización.");
     }
 
+    console.log(responseData)
+
 
   }, []);
 
@@ -81,7 +79,9 @@ export default function Account() {
         <Header />
         <Navbar />
       </div>
-      <main className="box-main"></main>
+      <main className="box-main">
+        <Location/>
+      </main>
       <Footer />
     </div>
   );
