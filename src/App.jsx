@@ -2,7 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Account from "./views/Account";
 import Map from "./views/Map";
-import Login from "./views/login";
+//import Login from "./views/login";
 
 function App() {
   return (
