@@ -25,8 +25,8 @@ export default function Account() {
           console.log(longitude)
 
           const data = {
-            lat: 17.0721253,
-            lng: -96.7387051,
+            lat: latitude,
+            lng: longitude,
             keyword: "punto de interes",
           };
       
