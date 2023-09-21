@@ -36,7 +36,7 @@ export default function Account() {
               "Content-Type": "application/json",
               'Access-Control-Allow-Origin': '*'
             },
-            body: data,
+            body: JSON.stringify(data),
           };
       
           fetch(API_URI, requestOptions)
